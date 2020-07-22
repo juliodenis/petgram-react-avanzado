@@ -15,7 +15,7 @@ export const PhotoCard = ({ id, likes = 0, src = DEFAULT_IMAGE }) => {
     <Article ref={element}>
       {
         show && <>
-          <a href={`/detail/${id}`}>
+          <a href={`/?detail=${id}`}>
             <ImgWrapper>
               <Img src={src} alt='' />
             </ImgWrapper>
@@ -23,7 +23,7 @@ export const PhotoCard = ({ id, likes = 0, src = DEFAULT_IMAGE }) => {
           <Button onClick={() => setLiked(!liked)}>
             <Icon size='32' />{likes} Like
           </Button>
-        </>
+                </>
       }
 
     </Article>
