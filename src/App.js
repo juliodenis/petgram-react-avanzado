@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import { ListOfCategories } from './components/ListOfCategories'
 import { GlobalStyle } from './components/styles/GlobalStyle'
-import { ListOfPhotoCards } from './container/ListOfPhotoCards'
+import { ListOfPhotoCardsWithQuery } from './container/ListOfPhotoCards'
 import { PhotoCardWithQuery } from './container/PhotoCardWithQuery'
 import { Logo } from './components/Logo'
 
@@ -17,7 +17,7 @@ export const App = () => {
           : <>
 
             <ListOfCategories />
-            <ListOfPhotoCards categoryId={1} />
+            <ListOfPhotoCardsWithQuery categoryId={1} />
             </>
       }
     </div>
