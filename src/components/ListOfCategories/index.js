@@ -1,6 +1,7 @@
 import React, { Fragment, useState, useEffect } from 'react'
 import { Category } from '../Category'
 import { List, Item } from './styles'
+import { Loading } from '../Loading'
 
 function useCategoriesData () {
   const [categories, setCategories] = useState([])
@@ -46,7 +47,7 @@ export const ListOfCategories = () => {
   if (loading) {
     return (
 
-      'Cargando...'
+      <Loading />
     )
   }
 
