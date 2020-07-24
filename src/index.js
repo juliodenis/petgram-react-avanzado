@@ -6,7 +6,7 @@ import { ApolloProvider } from 'react-apollo'
 import { App } from './App'
 
 const client = new ApolloClient({
-  uri: 'https://petgram-rouge-ten.vercel.app/graphql'
+  uri: 'https://api-livid.vercel.app/graphql'
 })
 
 ReactDOM.render(
