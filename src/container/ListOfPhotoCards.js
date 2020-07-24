@@ -17,8 +17,8 @@ query getPhotos($categoryId: ID) {
     }
   }
 `
-export const ListOfPhotoCardsWithQuery = (props) => (
-  <Query query={GET_PHOTOS}>
+export const ListOfPhotoCardsWithQuery = ({ categoryId }) => (
+  <Query query={GET_PHOTOS} variables={{ categoryId }}>
     {
       (data) => {
         if (data.loading) return <Loading />
