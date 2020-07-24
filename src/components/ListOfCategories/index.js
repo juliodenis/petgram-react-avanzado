@@ -8,7 +8,7 @@ function useCategoriesData () {
   const [loading, setLoading] = useState(false)
   useEffect(() => {
     setLoading(true)
-    window.fetch('https://petgram-rouge-ten.vercel.app/categories')
+    window.fetch('https://api-livid.vercel.app/categories')
       .then(res => res.json())
       .then(response => {
         setCategories(response)
