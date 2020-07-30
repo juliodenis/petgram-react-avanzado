@@ -1,7 +1,7 @@
 import React, { useContext, Fragment } from 'react'
 import { Context } from '../Context'
 import { SubmitButton } from '../components/SubmitButton/index'
-export const User = () => {
+export default () => {
   const { removeAuth } = useContext(Context)
   return (
     <>
